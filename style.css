@@ -508,57 +508,136 @@ color: deepskyblue;
 /* Media Query for Tablet */
 @media only screen and (min-width:768px){
 .cta{
-font-size: 2.5rem;
+font-size: 3.5rem;
 padding: 20px 60px;
 }
 
 h1.section-title{
-font-size: 4rem;
+font-size: 6rem;
 }
-
-}
-/*Endd of Media Query for Tablet*/
 
 /*Hero*/
-#hero h1{
-font-size: 4rem;
-}
+#hero .hero container h1{
+    font-size: 6rem;
+    }
 
-.cta{
-font-size: 1.5rem;
-}
 /*End of Hero*/
-
 
 /*Service Section*/
 #services .service-bottom .service-item{
- flex-basis: 45%;
-margin: 2.5%;
+    flex-basis: 45%;
+    margin: 2.5%;
+ 
 }
+
+
 /*End of Service Section*/
 
-/*Projects Section*/
-#projects .project-item{
-flex-direction: row;
+/*Project */
+#projects .project-item {
+    flex-direction: row;
+    }
+
+#projects .project-item {
+    height: 400px;
+    margin: 0;
+    width: 100%;
+    border-radius: 0;
 }
 
-#projects .project-item:nth-child(even){
-flex-direction: row-reverse;
+#projects .all-projects .projects-info {
+    height: 100%;
+    font-size: 1rem;
 }
 
-#projects .projects-item{
-height: 400px;
-margin: 0;
-width: 100%;
-border-radius: 0;
+#projects .all-projects .projects-img {
+    height: 100%;
 }
 
-#projects .all-projects .projects-info{
-height: 100%;
+/*End of Project*/
+
+/*About*/
+#about .about {
+    flex-direction: row;
+}
+
+#about .col-left {
+    width: 600px;
+    height: 400px;
+    padding-left: 60px;
+}
+
+#about .about .col-left .about-img::after{
+    left: -45px;
+    top: 34px;
+    height: 98%;
+    width: 98%;
+    border: 3px solid lightblue;
+}
+
+#about .col-right{
+    text-align:left;
+    padding: 30px;
+    
+
+}
+#about .col-right h1 {
+    text-align: left;
+    font-size: 3rem;
 
 }
 
-#projects .all-projects .projects-img{
-height: 100%;
+/*End of About*/
+
+/*Contact*/
+
+#contact .contact{
+    flex-direction: column;
+    padding: 100px 0;
+    align-items: center;
+    justify-content: center;
+    min-width: 20vh;
+
 }
-/*End of Projects*/
+
+#contact .contact-item {
+    width: 100%;
+    display: flexbox;
+    flex-direction: row;
+    margin: 3;
+}
+
+#contact .contact-items {
+    margin: 20px;
+    flex-direction: row;
+
+}
+
+#contact .contact-item .icon{
+    height: 80px;
+    width: 100px;
+
+}
+
+#contact .contact-item .icon img {
+    object-fit: contain;
+
+}
+
+#contact .contact-item .contact-info {
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
+}
+
+
+
+
+}
+/*End of Media Query for Tablet*/
+
+
+
+
+
+
