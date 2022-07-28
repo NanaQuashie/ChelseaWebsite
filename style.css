@@ -177,6 +177,7 @@ p {
   max-width: 500px;
   margin: auto;
   padding: 100px 0;
+  background: gray;
 }
 
 #services .service-top p {
@@ -250,6 +251,35 @@ p {
   line-height: 1.9rem;
 }
 
+
+@media screen and (max-width: 770px) {
+    #services .services{
+        flex-basis: 100%;
+    }
+
+    #services .service-top p {
+        flex-basis: 100%;
+        font-size: 1rem;
+    }
+
+    #services .service-item {
+        flex-direction: column;
+    }
+
+    #services .service-item {
+        flex-basis: 100%;
+        justify-content: space-around;
+    }
+
+    #services .service-item h2 {
+        font-size: 1.5rem;
+    }
+
+    #services .service-item p {
+        font-size: 1rem;
+    }
+}
+
 /*Services Section*/
 
 /*Projects Section*/
@@ -258,6 +288,7 @@ p {
   max-width: 1200px;
   margin: 0 auto;
   padding: 100px 0;
+  
 }
 
 #projects .projects-header h1 {
@@ -336,6 +367,31 @@ p {
   transform: scale(1.1);
 }
 
+@media screen and (max-width: 770px) {
+    #projects .projects{
+        flex-basis: 100%;
+    }
+
+    #projects .projects-item {
+        flex-basis: 100%;
+    }
+
+    #projects .projects-info h1 {
+        font-size: 20px;
+    }
+
+    #projects .projects-info h2 {
+        font-size: 16px;
+    }
+
+    #projects .projects-info p {
+        font-size: 14px;
+    }
+        
+}
+
+
+
 /*End of Projects Section*/
 
 /*About Section*/
@@ -394,6 +450,20 @@ p {
   z-index: -1;
 }
 
+@media screen and (max-width: 770px) {
+    .section-title h1{
+        flex-basis: 100%;
+    }
+
+    #about .col-right .cta {
+        flex-basis: 100%;
+    }
+
+    #about .col-right .cta p{
+        font-size: 1rem;
+    }
+}
+
 /*End of About Section*/
 
 /*Contact Section*/
@@ -444,6 +514,12 @@ p {
   font-size: 1.3rem;
   line-height: 2rem;
   font-weight: 500;
+}
+
+@media screen and (max-width: 770px) {
+    #contact .contact-items {
+        flex-basis: 100%;
+    }
 }
 /*End of Contact Section*/
 
