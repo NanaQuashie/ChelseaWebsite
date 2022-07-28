@@ -73,9 +73,13 @@ color: white;
 
 /*Hero section*/
 #hero{
-background-image: url(./img/background.png);
+background: url(./img/background.png);
 background-size: cover;
-background-position: top center;
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+height: 100vh;
+width: 100vh;
 position: relative;
 z-index: 1;
 }
@@ -141,6 +145,35 @@ animation-delay: 1.5s;
 animation-delay: 2.5s;
 }
 
+@media screen and (max-width: 770px){
+    #hero{
+        flex-basis: 100%;
+        background-position: cover;
+        background-size: cover;
+        height: 100vh;
+        
+    }
+
+    .hero-container{
+        flex-basis: 100%;
+        background-size: cover;
+        background-position: cover;
+    }
+
+    #hero h1{
+        flex-basis: 100%;
+        font-size: 2.5rem;
+    }
+
+    #hero img{
+        flex-basis: 100%;
+        background-position: cover;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+    }
+}
+
 
 /*End Hero Section*/
 
@@ -174,7 +207,7 @@ margin-top: 50px;
 }
 
 #services .service-item{
-flex-basis:80%;
+flex-basis:48%;
 display:flex;
 align-items: flex-start;
 justify-content: center;
