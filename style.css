@@ -48,7 +48,7 @@ p {
   color: deepskyblue;
   background-color: transparent;
   border: 2px solid darkblue;
-  font-size: 2rem;
+  font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   margin-top: 36px;
@@ -94,6 +94,7 @@ p {
   font-size: 4rem;
   position: relative;
   color: transparent;
+  margin-left: 20px;
   animation: text_reveal 0.5s ease forwards;
   animation-delay: 1.5s;
 }
@@ -139,6 +140,14 @@ p {
   animation-delay: 2.5s;
 }
 
+#hero a.cta {
+  margin-left: 20px;
+  
+
+}
+
+
+
 @media screen and (max-width: 770px) {
   #hero {
     flex-basis: 100%;
@@ -171,6 +180,10 @@ p {
 
 /*Services Section*/
 
+#services {
+  background: gray;
+}
+
 #services .services {
   flex-direction: column;
   text-align: center;
@@ -195,12 +208,13 @@ p {
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 50px;
+  flex-basis: 48%;
 }
 
 #services .service-item {
   flex-basis: 48%;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
   padding: 30px;
@@ -659,10 +673,18 @@ p {
     text-align: left;
     padding: 30px;
   }
-  #about .col-right h1 {
+  #about .col-right h1.section.title {
     text-align: left;
     font-size: 3rem;
+    
   }
+
+  /*#about h1.section.title{
+    position: relative;
+    left: 600px;
+    top: 50px;
+    overflow: hidden;
+  }*/
 
   /*End of About*/
 
@@ -677,11 +699,16 @@ p {
   }
 
   #contact .contact-item {
-    width: 100%;
+    width: 50%;
+    /*width: 100%;*/
     display: flexbox;
+    position: relative;
+    left: 400px;
     flex-direction: row;
     margin: 3;
   }
+
+  
 
   /* #contact .contact-items {
     margin: 1rem;
